@@ -1,15 +1,15 @@
  // ==UserScript==
 // @name         Aryion Disinterest Filter Ultimate
 // @namespace    https://github.com/157Studios/AryionDisinterestFilterUltimate
-// @description  Filter out artists, and tags you don't like on Aryion.com
+// @description  Filter out artists, and tags you dislike on Aryion.com
 // @author       VA145
 // @version      1.4.0
 // @encoding     utf-8
-// @licence      https://raw.githubusercontent.com/???/LICENSE
+// @licence      https://github.com/157Studios/AryionDisinterestFilterUltimate/raw/main/LICENSE
 // @homepage     https://github.com/157Studios/AryionDisinterestFilterUltimate
 // @supportURL   https://github.com/157Studios/AryionDisinterestFilterUltimate/issues
-// @updateURL    https://github.com/???.user.js
-// @downloadURL  https://github.com/???.user.js
+// @updateURL    https://github.com/157Studios/AryionDisinterestFilterUltimate/raw/main/AryionDisinterestFilterUltimate.user.js
+// @downloadURL  https://github.com/157Studios/AryionDisinterestFilterUltimate/raw/main/AryionDisinterestFilterUltimate.user.js
 // @match        http://aryion.com/g4/*
 // @match        https://aryion.com/g4/*
 // @exclude-match http://aryion.com/g4/view/*
