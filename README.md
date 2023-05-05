@@ -17,8 +17,9 @@ ADFU has the following features:
 
 ## Installation
 To install ADFU, you need a compatible userscript plugin. I have tested it with the following plugins:
-  ### Chrome/Chromium-based browsers:
-    * Violentmonkey
+### Chrome/Chromium-based browsers:
+  * Violentmonkey
+  * Tampermonkey - It will complain about some code but it works perfectly fine
 
 Please follow your userscript manager's instructions to install a userscript from URL, and copy this URL:
 `https://github.com/157Studios/AryionDisinterestFilterUltimate/raw/main/AryionDisinterestFilterUltimate.user.js`
