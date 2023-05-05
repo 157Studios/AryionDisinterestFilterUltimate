@@ -3,7 +3,7 @@
 // @namespace    https://github.com/157Studios/AryionDisinterestFilterUltimate
 // @description  Filter out artists, and tags you dislike on Aryion.com
 // @author       VA145
-// @version      1.4.2
+// @version      1.4.3
 // @encoding     utf-8
 // @licence      https://github.com/157Studios/AryionDisinterestFilterUltimate/raw/main/LICENSE
 // @homepage     https://github.com/157Studios/AryionDisinterestFilterUltimate
@@ -360,7 +360,8 @@
     dAlert('importData('+importJSON+') called');
 		var newListUsers = [];
 		var newListTags = [];
-
+		if(importList === undefined)
+			var importList = [];
 		try {
 		  importList = JSON.parse(importJSON);
 		  newListUsers = importList.badUsers;
