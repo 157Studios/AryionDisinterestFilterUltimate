@@ -3,7 +3,7 @@
 // @namespace    https://github.com/157Studios/AryionDisinterestFilterUltimate
 // @description  Filter out artists, and tags you dislike on Aryion.com
 // @author       VA145
-// @version      1.4.1
+// @version      1.4.2
 // @encoding     utf-8
 // @licence      https://github.com/157Studios/AryionDisinterestFilterUltimate/raw/main/LICENSE
 // @homepage     https://github.com/157Studios/AryionDisinterestFilterUltimate
@@ -356,17 +356,17 @@
 	 * @param {Object|String} importJSON - Imported JSON-Object/String
 	 */
   dAlert('331 Create function importData');
-	function importData(importJSON) {
+  function importData(importJSON) {
     dAlert('importData('+importJSON+') called');
 		var newListUsers = [];
 		var newListTags = [];
 
 		try {
-			importList = JSON.parse(importJSON);
-			newListUsers = importList.badUsers;
-      newListTags = importList.badTags;
+		  importList = JSON.parse(importJSON);
+		  newListUsers = importList.badUsers;
+		  newListTags = importList.badTags;
 		} catch(e) {
-			alert('Error: Your browser doesn\'t support JSON-Methods...');
+			alert('Failed to import JSON: ' + e);
 
 			return;
 		}
@@ -400,7 +400,7 @@
 			jsonExport = JSON.stringify({"badUsers":badUserList, "badTags":badTagList});
 		//	jsonExport2 = JSON.stringify({"badTags":badTagList});
 		} catch(e) {
-			alert('Error: Your browser doesn\'t support JSON-Methods...');
+			alert('Failed to export JSON: ' + e);
 
 			return;
 		}
