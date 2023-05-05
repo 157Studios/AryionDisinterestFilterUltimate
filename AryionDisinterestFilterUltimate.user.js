@@ -3,7 +3,7 @@
 // @namespace    https://github.com/157Studios/AryionDisinterestFilterUltimate
 // @description  Filter out artists, and tags you dislike on Aryion.com
 // @author       VA145
-// @version      1.4.0
+// @version      1.4.1
 // @encoding     utf-8
 // @licence      https://github.com/157Studios/AryionDisinterestFilterUltimate/raw/main/LICENSE
 // @homepage     https://github.com/157Studios/AryionDisinterestFilterUltimate
@@ -15,7 +15,6 @@
 // @exclude-match http://aryion.com/g4/view/*
 // @exclude-match https://aryion.com/g4/view
 // @grant        none
-// old require      https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js
 // ==/UserScript==
 
 (function() {
