@@ -19,3 +19,71 @@ ADFU has the following features:
 To install ADFU, you need a compatible userscript plugin. I have tested it with the following plugins:
   ### Chrome/Chromium-based browsers:
     * Violentmonkey
+
+Please follow your userscript manager's instructions to install a userscript from URL, and copy this URL:
+`https://github.com/157Studios/AryionDisinterestFilterUltimate/raw/main/AryionDisinterestFilterUltimate.user.js`
+
+Alternatively, download the file [here](https://github.com/157Studios/AryionDisinterestFilterUltimate/raw/main/AryionDisinterestFilterUltimate.user.js) and import it into you userscript manager.
+
+## Editing the configuration
+Most userscript managers have a code editor. Click the edit button for the script to open it.
+
+Config options look like:
+```
+/****CONFIG OPTIONS****/
+  /**
+  * Option to skip confirmation dialogs when blocking a user.
+  *
+  * @type {boolean} - true = show confirmation when blocking
+  */
+  var skipConfirmationDialog = false;
+
+  /**
+  * Option to always show a 'Block' button next to usernames or only show the button when hovered over
+  *
+  * @type {boolean} - true = only show buttons when mouse is hovered them, false = always shown buttons
+  */
+  var useMouseOverButtons = true;
+
+  /**
+   * Option to enable automated import of account blacklist tags.
+   * This, when enabled, disables the import tags button.
+   *
+   * @type {boolean} - true = auto-import tags
+   **/
+  var autoImportBlacklist = true;
+
+  /**
+   * Custom string to prefix to the Blocked Items counter
+   *
+   * @type {string} - The prefix string to use. Note that whitespace is not added automatically
+   **/
+  var blockedCounterPrefix = "Blocked: "
+
+  //Format of above and below:
+  //{prefix}{counterValue}{suffix}
+  /**
+   * Custom string for the seperator
+   * of counter value vs items on page
+   * This is usually a slash
+   *
+   * @type {string} - The seperator string
+   **/
+  var blockedCounterSeperator = '/'
+  /**
+   * Custom string to suffix to the Blocked Items counter
+   *
+   * @type {string} - The suffix string to use. Note that whitespace is not added automatically
+   **/
+  var blockedCounterSuffix = ""
+
+  /**
+  * Option to debug the script via logging
+  *
+  * @type {boolean} - true = enable debug logs
+  */
+  var debug = true;
+	
+	
+  /****END OF CONFIG OPTIONS****/
+  ```
