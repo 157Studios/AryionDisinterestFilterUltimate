@@ -21,23 +21,25 @@
 (function() {
 	'use strict';
   //alert("I am alive!");
-	/**
-	 * Option to skip confirmation dialogs when blocking a user.
-	 *
-	 * @type {boolean} - true = show confirmation when blocking
-	 */
-	var skipConfirmationDialog = false;
+	
+  /****CONFIG OPTIONS****/
+  /**
+  * Option to skip confirmation dialogs when blocking a user.
+  *
+  * @type {boolean} - true = show confirmation when blocking
+  */
+  var skipConfirmationDialog = false;
 
-	/**
-	 * Option to disable MouseOver-Buttons and use all-time shown buttons
-	 *
-	 * @type {boolean} - true = only show buttons when mouse is hovered them, false = always shown buttons
-	 */
-	var useMouseOverButtons = true;
+  /**
+  * Option to always show a 'Block' button next to usernames or only show the button when hovered over
+  *
+  * @type {boolean} - true = only show buttons when mouse is hovered them, false = always shown buttons
+  */
+  var useMouseOverButtons = true;
 
   /**
    * Option to enable automated import of account blacklist tags.
-   * This, when enabled, disables the import tags button
+   * This, when enabled, disables the import tags button.
    *
    * @type {boolean} - true = auto-import tags
    **/
@@ -67,12 +69,15 @@
    **/
   var blockedCounterSuffix = ""
 
-	/**
-	 * Option to debug the script via logging
-	 *
-	 * @type {boolean} - true = enable debug logs
-	 */
-	var debug = true;
+  /**
+  * Option to debug the script via logging
+  *
+  * @type {boolean} - true = enable debug logs
+  */
+  var debug = true;
+	
+	
+  /****END OF CONFIG OPTIONS****/
 
   /*
    * Posts an alert if Xdebug is true
@@ -85,7 +90,7 @@
       alert(message);
   }
 
-  var Xdebug = false;
+  var Xdebug = false; //Extreme debug mode: DO NOT ENABLE
 
   dAlert('Option variables: \n  skipConfirmationDialog:'+skipConfirmationDialog+'\n  useMouseOverButtons:'+useMouseOverButtons+'\n  autoImportBlacklist:'+autoImportBlacklist+'\n  blockedCounterPrefix:'+blockedCounterPrefix+'\n  blockedCounterSuffix:'+blockedCounterSuffix);
 
