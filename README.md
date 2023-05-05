@@ -25,6 +25,14 @@ Please follow your userscript manager's instructions to install a userscript fro
 
 Alternatively, download the file [here](https://github.com/157Studios/AryionDisinterestFilterUltimate/raw/main/AryionDisinterestFilterUltimate.user.js) and import it into you userscript manager.
 
+## Usage
+This script will automatically block posts that contain blacklisted tags, or are posted by a blacklisted user. It will also add several buttons above the gallery box:
+  * Temporarily Show Blocked Content - Will show all content that was hidden, applying a red border around each item. Turns into a self-explanitory "Hide Blocked Content" button after showing
+  * Export Blocked Users and Tags to File - Downloads a JSON file containing all blacklisted users and tags for transfer to another browser
+  * Import Blocked Users and Tags from File - Opens a file picker to choose a JSON file containing blacklisted users and tags exported earlier
+  * Unblock User (Global List) - Shows a list of buttons corresponding to all users you have blocked, allowing you to unblock them
+  * Unblock User (On this Page) - Shows a list of buttons corresponding to users on the current page that were blocked. Right now, this includes non-blocked users whose content was blocked only by tags
+
 ## Editing the configuration
 Most userscript managers have a code editor. Click the edit button for the script to open it.
 
@@ -87,3 +95,4 @@ Config options look like:
 	
   /****END OF CONFIG OPTIONS****/
   ```
+  
