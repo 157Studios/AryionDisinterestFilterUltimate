@@ -3,7 +3,7 @@
 // @namespace    https://github.com/157Studios/AryionDisinterestFilterUltimate
 // @description  Filter out artists, and tags you dislike on Aryion.com
 // @author       VA145
-// @version      1.4.3
+// @version      1.4.4
 // @encoding     utf-8
 // @licence      https://github.com/157Studios/AryionDisinterestFilterUltimate/raw/main/LICENSE
 // @homepage     https://github.com/157Studios/AryionDisinterestFilterUltimate
@@ -756,9 +756,9 @@
         logAdd('Note: tagstr was null');
         return false;
     }
-    currentTags = tagstr.split(', ');
+    currentTags = tagstr.toUpperCase().split(', ');
     for(var i=0;i<badTagList.length;i++) {
-      if(currentTags.indexOf(badTagList[i]) !== -1) {
+      if(currentTags.indexOf(badTagList[i].toUpperCase()) !== -1) {
         logAdd("Found bad tag '" + badTagList[i] + "' in tagstr " + tagstr);
         return true;
       }
